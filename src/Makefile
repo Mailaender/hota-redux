@@ -9,7 +9,7 @@ OBJS=\
 	rooms.o  render.o main.o    music.o   debug.o    lzss.o        \
 	sound.o  screen.o scale2x.o scale3x.o game2bin.o cd_iso.o
 
-LIBS=$(SDL_LIBS) -lSDLmain -lsmpeg -lSDL_mixer
+LIBS=$(SDL_LIBS) -lsdlmain -lsmpeg -lSDL_mixer
 
 alien: $(OBJS)
 	$(CC) -o $@ $(OBJS) $(LIBS)
